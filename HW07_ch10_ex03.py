@@ -6,3 +6,8 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def cumulative_sum(numbers):
+	if len(numbers) == 0: return numbers
+
+	return cumulative_sum(numbers[:-1]) + [sum(numbers)]
